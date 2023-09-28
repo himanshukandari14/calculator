@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater|himanshu</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="h-[100vh] w-[100vw] bg-blue-300 flex justify-center items-center ">
+        <!-- main body -->
+        <div class=" h-[700px] w-[500px] drop-shadow-2xl main">
+            
+       <form action="">
+            <!-- screen -->
+            <div  class="w-full h-[120px] text-[45px] flex justify-center items-center">
+                <input id="display" type="button" name="display">
+            </div>
+            <!-- buttons -->
+           <div id="" class="grid grid-cols-4 grid-rows-5 w-full h-[calc(700px-120px)] gap-6 px-4 py-4 text-white text-[35px] ">
+           <input class=" works rounded-3xl  task" type="button" value="AC" onclick="display.value=''">
+
+            <input class=" works rounded-3xl task" type="button" value="DL" onclick="display.value=display.value.toString().slice(0,-1)">
+
+             <input class="rounded-3xl task " type="button" value="." onclick="display.value+='.'">
+
+              <input class="task rounded-3xl " type="button" value="/" onclick="display.value+='/'">
+
+               <input class="task rounded-3xl " type="button" value="7" onclick="display.value+='7'">
+
+                <input class="task rounded-3xl " type="button" value="8" onclick="display.value+='8'">
+
+                 <input class=" task rounded-3xl " type="button" value="9" onclick="display.value+='9'">
+
+                  <input class=" rounded-3xl task" type="button" value="*" onclick="display.value+='*'">
+
+                   <input class=" rounded-3xl task" type="button" value="4" onclick="display.value+='4'">
+
+                    <input class=" rounded-3xl task" type="button" value="5" onclick="display.value+='5'">
+
+                     <input class=" rounded-3xl task" type="button" value="6" onclick="display.value+='6'">
+
+                      <input class=" rounded-3xl task" type="button" value="-" onclick="display.value+='-'">
+
+                       <input class=" rounded-3xl task" type="button" value="1" onclick="display.value+='1'">
+
+                        <input class=" rounded-3xl task" type="button" value="2" onclick="display.value+='2'">
+
+                         <input class=" task rounded-3xl" type="button" value="3" onclick="display.value+='3'">
+
+                          <input class=" task rounded-3xl" type="button" value="+" onclick="display.value+='+'">
+
+                           <input class=" task rounded-3xl" type="button" value="00" onclick="display.value+='00'">
+
+                            <input class=" task rounded-3xl" type="button" value="0" onclick="display.value+='0'">
+
+                             <input id="equals" class="works rounded-3xl col-start-3 col-end-5 text-[50px]" type="button" value="=" onclick="display.value=eval(display.value)">
+            
+           </div>
+       </form>
+    </div>
+</body>
+</html>
